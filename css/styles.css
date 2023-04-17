@@ -7,6 +7,8 @@
   --main-background-color: #ffffff;
   --secondary-background-color: #f4f4fd;
   --acsent-background-color: #2e2f42;
+  --customers-icon: #8e8f99;
+  --succsess-color: #31d0aa;
 }
 
 /* BODY */
@@ -66,6 +68,38 @@ img {
   margin-right: auto;
 }
 
+/* Social icons */
+
+.social-list {
+  display: flex;
+  gap: 24px;
+}
+
+.social-item {
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px;
+
+  color: var(--secondary-background-color);
+  background-color: var(--acsent-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--active-color);
+}
+
+.social-icons {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 /* Text styles */
 /*#region RegionName*/
 .secondary-titles {
@@ -91,6 +125,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -187,6 +223,10 @@ img {
   padding-bottom: 100px;
 }
 
+.footer .container {
+  display: flex;
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -207,18 +247,49 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
 }
+
+.footer-socials {
+  margin-left: 120px;
+}
+
+.footer-socials .footer-text {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer-socials .social-icons {
+  width: 24px;
+  height: 24px;
+}
+.footer .social-link {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover {
+  background-color: var(--succsess-color);
+}
+
 /*#endregion RegionName*/
 
 /* Hero section */
 /*#region RegionName*/
 .hero {
-  background-color: var(--acsent-background-color);
-  text-align: center;
-}
-
-.hero {
   padding-top: 188px;
   padding-bottom: 188px;
+  background-color: var(--acsent-background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ .jpg);
+  max-width: 1440рх;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
 }
 
 .hero-title {
@@ -267,6 +338,20 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.icon-box {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  padding: 24px 100px;
+}
+
+.provide-icons {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
 .provide {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -341,6 +426,7 @@ img {
 .team-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .item-box {
@@ -352,16 +438,63 @@ img {
 
 /*#endregion RegionName*/
 
+/* Customers */
+/*#region RegionName*/
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers .main-titles {
+  margin-bottom: 72px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+
+.customers-link {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid var(--customers-icon);
+  border-radius: 4px;
+
+  color: var(--customers-icon);
+}
+
+.customers-icons {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--active-color);
+  border: 1px solid var(--active-color);
+}
+
+/*#endregion RegionName*/
+
 /* Portfolio page */
 /*#region RegionName*/
 
-/* Filter buttons */
+/* Products section */
 
 .products {
   padding-top: 96px;
   padding-bottom: 120px;
 }
 
+/* Filter buttons*/
+/*#region RegionName*/
 .filter-list {
   display: flex;
   margin-bottom: 72px;
@@ -395,10 +528,13 @@ img {
   border: 1px solid transparent;
   color: var(--main-background-color);
   background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+/*#endregion RegionName*/
 
 /* Products */
-
+/*#region RegionName*/
 .products-list {
   display: flex;
   flex-wrap: wrap;
@@ -435,4 +571,5 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
+/*#endregion RegionName*/
 /*#endregion RegionName*/
