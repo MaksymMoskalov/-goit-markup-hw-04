@@ -72,14 +72,14 @@ img {
 
 .social-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
-.social-item {
-}
-
 .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -95,8 +95,6 @@ img {
 }
 
 .social-icons {
-  width: 16px;
-  height: 16px;
   fill: currentColor;
 }
 
@@ -262,7 +260,6 @@ img {
   height: 24px;
 }
 .footer .social-link {
-  padding: 8px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -279,7 +276,6 @@ img {
   padding-bottom: 188px;
   background-color: var(--acsent-background-color);
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -340,16 +336,19 @@ img {
 }
 
 .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
-  padding: 24px 100px;
+  /* padding: 24px 100px; */
 }
 
 .provide-icons {
   display: block;
-  width: 64px;
-  height: 64px;
 }
 
 .provide {
@@ -416,6 +415,9 @@ img {
 .team-item {
   background-color: var(--main-background-color);
   flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img {
   display: block;
@@ -430,10 +432,7 @@ img {
 }
 
 .item-box {
-  padding: 32px 16px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  padding: 32px 0;
 }
 
 /*#endregion RegionName*/
