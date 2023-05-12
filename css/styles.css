@@ -222,7 +222,7 @@ img {
 
 .footer .container {
   display: flex;
-  gap: 120px;
+
   align-items: baseline;
 }
 
@@ -269,6 +269,10 @@ img {
 }
 .footer .social-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-motto {
+  margin-right: 120px;
 }
 
 /*#endregion RegionName*/
